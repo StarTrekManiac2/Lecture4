@@ -1,5 +1,5 @@
 /*
- * Using what we've learnt so far, analyze this code and try to visualise it.
+ * Using what we've learnt so far, analyze this code and try to visualise it - commented.
  * @author st20155985
  */
 
