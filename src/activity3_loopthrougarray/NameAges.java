@@ -3,8 +3,6 @@
  * @author st20155985
  */
 
-// INCOMPLETE
-
 package activity3_loopthrougarray;
 
 public class NameAges
@@ -17,19 +15,20 @@ public class NameAges
         String[] names = { "April", "James", "Mary", "Simon" };
         int[] ages = { 5, 6 , 9, 11 };
 
-        // Declare variable for fetching current iteration in loop below
-        int i = 1;
+        // Declare variables for loop iteration and to count the children as we loop through
+        int index=0;
+        int count=1;
 
-        // Loop through elements in names array
+        // Loop through elements in the arrays
         do
         {
-            // Output the current element value and corresponding age array element value
-            System.out.println("CHILD " + i + " : " + names[0] + ", " + ages[0]);
+            // Output current elements from 'names' and 'ages' arrays
+            System.out.println("CHILD " + count + ": " + names[index] + ", " + ages[index]);
 
-            // Increment i to the next iteration
-            i++;
-        }
-        while ((names.length < 4) && (ages.length < 4));    // Until all 4 elements are reached
+            // Add to the child count and iterate to next element
+            count++;
+            index++;
+        } while ((index < names.length) && (index < ages.length));
 
     }
 
